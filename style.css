@@ -1,0 +1,83 @@
+body{
+    background-image:url('./static/background.png');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.rotating img{
+    width: 40vh;
+    position: absolute;
+    height: 40vh; 
+
+}
+
+.rotating{
+    position: absolute;
+    left: 40vw;
+    top: 10vh;
+}
+
+.pp{
+    z-index: 50;
+    width: 40vh;
+    position: absolute;
+    height: 40vh; 
+    left: 40vw;
+    top: 10vh;
+    border-radius: 200vh;
+}
+
+.shadow{
+    z-index: 51;
+    width: 40vh;
+    position: absolute;
+    height: 40vh; 
+    left: 40vw;
+    top: 10vh;
+    border-radius: 200vh;
+    box-shadow: 0 0 5vh rgb(0, 157, 209) inset;
+    opacity: 90%;
+}
+
+.description{
+ display: flex;   
+ justify-content: center;
+}
+
+.description p{
+    width: 80vw;
+    height: 20vh;
+    margin-top: 60vh;
+    font-size:4vh;
+    font-family: 'ubuntu';
+    
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url(./static/Ubuntu-Italic.ttf);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-10vh);
+}
+
+.contact{
+    font-family: 'ubuntu';
+    background-image: url(./static/rt.png);
+    border: none;
+    width: 20vw;
+    height: 15vh;
+    font-size:8vh;
+    opacity: 80%;
+    transition: 1s all;
+}
+
+.contact:hover{
+    background-color: blue;
+    opacity: 100%;
+}
